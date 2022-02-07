@@ -9,7 +9,6 @@ bgcolor('cyan')  # Background color
 title('ПОЛЯНА')  # Name of window
 color('light green', 'light green')
 
-
 def rectangle(x, y):  # Function for making rectangles with x and y sizes
     for i in range(0, 2):
         forward(x)
