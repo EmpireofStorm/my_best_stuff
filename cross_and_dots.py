@@ -2,8 +2,8 @@ slots=["1","2","3","4","5","6","7","8","9"]
 end=0
 def endornot(x):
     x+=1
-    yesorno = int(input('Do you want to play again? 1.Yes 2.No'))
-    if yesorno == 1:
+    yesorno = int(input('Do you want to play again? y/n'))
+    if yesorno == "y":
         slots = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
         print(slots)
         crossanddots(slots)
