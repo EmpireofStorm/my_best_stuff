@@ -1,5 +1,5 @@
 # my_best_stuff
-There is programms that i am proud of.
+There are programms that i am proud of.
 Shortly about every programm:
 1.Binary_search:just standart programm where I made a binary search
 2.Easiest calculator:name says everything
