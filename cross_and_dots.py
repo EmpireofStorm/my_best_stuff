@@ -1,16 +1,16 @@
-slots=["1","2","3","4","5","6","7","8","9"]
+slots=["1","2","3","4","5","6","7","8","9"] #Slots-game field
 end=0
-def endornot(x):
+def endornot(x): #Ask if he want to play again
     x+=1
     yesorno = int(input('Do you want to play again? y/n'))
     if yesorno == "y":
-        slots = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+        slots = ["1", "2", "3", "4", "5", "6", "7", "8", "9"] #If yes I renew game field
         print(slots)
         crossanddots(slots)
     else:
         print("See you again!")
         quit()
-def crossanddots(slots):
+def crossanddots(slots): #Main function
     if end==1:
         slots = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
     print("New game with 2 players")
@@ -23,18 +23,20 @@ def crossanddots(slots):
     count=0
     while True:
         if count%2==0:
+            #Asks for input
             print('Where do you want to place your "x"?')
             inputfromplayer = int(input())
             for i in range(0, len(slots)):
                 if i==inputfromplayer:
                     slots[i-1]="x"
+                    #Printing game field
                     print(slots[0]+"|"+slots[1]+"|"+slots[2])
                     print("-|-|-")
                     print(slots[3]+"|"+slots[4]+"|"+slots[5])
                     print("-|-|-")
                     print(slots[6]+"|"+slots[7]+"|"+slots[8])
         count+=1
-        win(slots)
+        win(slots) #Checks if he win
         if count%2!=0:
             print('Where do you want to place your "o"?')
             inputfromplayer = int(input())
@@ -50,7 +52,7 @@ def crossanddots(slots):
 
 
 
-def win(slots):
+def win(slots): #This checks if user win and how, then another function will ask about new game
     if slots[0] == slots[3] == slots[6]:
         print("Player, who placed", slots[0], "won, because he has streak of 3 at first vertical line")
         print("The game is over")
