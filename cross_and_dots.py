@@ -1,3 +1,4 @@
+#I can make this programm a lot easier but currently I don't have time for it :sadge:git
 slots=["1","2","3","4","5","6","7","8","9"] #Slots-game field
 end=0
 def endornot(x): #Ask if he want to play again
